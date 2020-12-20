@@ -46,7 +46,7 @@ public class TourGuide {
         b.setName("Ms. Farah");
         b.setAge(25);
         b.setActivity("City Tour Guide");
-        b.setPlaces("1. Visit Museum /n2. city sighseeing /n3. visit main landmarks");
+        b.setPlaces("\n1. Visit Museum \n2. city sighseeing \n3. visit main landmarks");
         b.setTrans("Bus");
         System.out.println("Tour Guide Name: " + b.getName());
         System.out.println("Age: " + b.getAge());
