@@ -8,36 +8,36 @@
  *
  * @author Danielfirdaus
  */
-public class Adventure {
+public class Adventure extends Tour {
     
     String name;
     String activity;
     String places;
     double age;
     
-    public void setName(String name){
-        this.name = name;
+   Adventure(){
+       this.name = "Mr.Raja";
+       this.age = 33;
+       this.places = "Adam's Peak (Sri Lanka)";
+   }
+    
+   public void printAdventure(){
+       
+       System.out.println("Tour Guide Name: " + name);
+        System.out.println("Age: " + age);
+   }
+   
+   
+    public void printPlaces(){
+        System.out.println("Suggestion of Places: " + places);
     }
-    public void setAge(double age){
-        this.age = age;
-    }
+    
     public void setActivity(String activity){
         this.activity = activity;
     }
-    public void setPlaces(String places){
-        this.places = places;
-    }
-    
-    public String getName(){
-        return this.name;
-    }
-    public double getAge(){
-        return this.age;
-    }
+   
     public String getActivity(){
         return this.activity;
     }
-    public String getPlaces(){
-        return this.places;
-    }
+    
 }

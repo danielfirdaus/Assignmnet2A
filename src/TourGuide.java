@@ -22,37 +22,60 @@ public class TourGuide {
         System.out.println("Welcome to Tour Guide system");
         System.out.println("------------------------------------------------");
         Scanner Keyboard = new Scanner(System.in);
-        System.out.println("Please enter service code Adventure Guide(a) or City Guide(b): ");
+        System.out.println("Please enter service code: \nAdventure Guide(a) \nCity Guide(b) \nCulture Guide(c) \nForest Guide(d) ");
         char choice = Keyboard.nextLine().charAt(0);
         System.out.println("------------------------------------------------");
         
        if( choice == 'a' || choice == 'A'){ 
         Adventure a = new Adventure();
+        Adventure b = new Adventure();
         System.out.println(" | Welcome to Adventure Guide | ");
+        b.PrintTour();
         System.out.println("================================");
-        a.setName("Mr. Raja");
-        a.setAge(33);
+        b.printAdventure();
         a.setActivity("Trekking Guide");
-        a.setPlaces("Adam's Peak (Sri Lanka)");
-        System.out.println("Tour Guide Name: " + a.getName());
-        System.out.println("Age: " + a.getAge());
         System.out.println("Suggestion of Activity: " + a.getActivity());
-        System.out.println("Suggestion of Places: " + a.getPlaces());
+        b.printPlaces();
        }
-       else if ( choice == 'b' || choice == 'B'){
+       else if( choice == 'b' || choice == 'B'){
         City b = new City();
+        City c = new City();
         System.out.println(" | Welcome to City Guide | ");
+        c.PrintTour();
         System.out.println("================================");
-        b.setName("Ms. Farah");
-        b.setAge(25);
+        c.printCity();
         b.setActivity("City Tour Guide");
-        b.setPlaces("\n1. Visit Museum \n2. city sighseeing \n3. visit main landmarks");
         b.setTrans("Bus");
-        System.out.println("Tour Guide Name: " + b.getName());
-        System.out.println("Age: " + b.getAge());
         System.out.println("Suggestion of Activity: " + b.getActivity());
-        System.out.println("Suggestion of Places: " + b.getPlaces());
+        c.printPlaces();
         System.out.println("Suggestion of Transportation: " + b.getTrans());
+       }
+       else if(choice == 'c' || choice == 'C'){
+        Culture a = new Culture();
+        Culture b = new Culture();
+        System.out.println(" | Welcome to Cultural Guide | ");
+        b.PrintTour();
+        System.out.println("================================");
+        a.printCulture();
+        b.setActivity("Culture Tour Guide");
+        b.setTrans("Bus");
+        System.out.println("Suggestion of Activity: " + b.getActivity());
+        a.printPlaces();
+        System.out.println("Suggestion of Transportation: " + b.getTrans());
+       }
+       else if(choice == 'd' || choice == 'C'){
+        Forest a = new Forest();
+        Forest b = new Forest();
+        System.out.println(" | Welcome to Cultural Guide | ");
+        b.PrintTour();
+        System.out.println("================================");
+        a.printCulture();
+        b.setActivity("Forest Tour Guide");
+        b.setTrans("Bus");
+        System.out.println("Suggestion of Activity: " + b.getActivity());
+        a.printPlaces();
+        System.out.println("Suggestion of Transportation: " + b.getTrans());
+       }
        }
     }
     

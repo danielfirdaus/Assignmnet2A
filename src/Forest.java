@@ -8,21 +8,20 @@
  *
  * @author Danielfirdaus
  */
-public class City extends Tour {
-    
+public class Forest extends Tour{
     String name;
     double age;
     String activity;
     String places;
     String transportation;
     
-    City(){
-        this.name = "Ms.Farah";
-        this.age = 25;
-        this.places = "\n1. Visit Museum \n2. city sighseeing \n3. visit main landmarks";
+    Forest(){
+        this.name = "Mr.Ali";
+        this.age = 27;
+        this.places = "\n1. Mossy Forest Gunung Brinchang \n2. Gunung Tahan Exploration";
     }
     
-    public void printCity(){
+    public void printCulture(){
         
         System.out.println("Tour Guide Name: " + name);
         System.out.println("Age: " + age);
@@ -48,4 +47,3 @@ public class City extends Tour {
         return this.transportation;
     }
 }
-
